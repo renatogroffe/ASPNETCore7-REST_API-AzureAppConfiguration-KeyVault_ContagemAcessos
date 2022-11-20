@@ -24,23 +24,6 @@ if (useAppConfiguration)
                     });
         }
     );
-    /*builder.Host.ConfigureAppConfiguration(cfg => {
-        cfg.AddAzureAppConfiguration(options =>
-        {
-            options.Connect(connectionAppConfiguration)
-                .ConfigureRefresh(refresh =>
-                {
-                    refresh.Register("Mensagens:Aviso").SetCacheExpiration(
-                        TimeSpan.FromSeconds(20));
-                });
-            
-            if (Convert.ToBoolean(builder.Configuration["UsingAzureKeyVault"]))
-                options.ConfigureKeyVault(kv =>
-                    {
-                        kv.SetCredential(new DefaultAzureCredential());
-                    });
-        });
-    });*/
 
     builder.Services.AddAzureAppConfiguration();
 }
