@@ -1,0 +1,2 @@
+# ASPNETCore7-REST_API-AzureAppConfiguration-KeyVault_ContagemAcessos
+Exemplo de API REST para contagem de acessos criada com .NET 7 + ASP.NET Core, utilizando (opcionalmente) configurações com conteúdos de mensagens armazenadas em um recurso do Azure App Configuration e no Azure Key Vault. Inclui um Dockerfile para a geração de imagens baseadas em Linux, além de monitoramento via Application Insights.
